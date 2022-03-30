@@ -1,0 +1,57 @@
+@keyframes spin {
+    0% {
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dropIn {
+    20% {
+        opacity: 0;
+        /* transform: translateY(-60%); */
+        transform: translateX(100%);
+    }
+    30%, 100% {
+        opacity: 1;
+        /* transform: translateY(0); */
+        transform: translateX(0);
+    }
+}
+
+#colored_dots {
+    /* 2s delay, lasts for 7s*/
+    /* animation: 7s 2s spin infinite linear; */ 
+    /* no delay */
+    animation: 7s spin infinite linear; 
+    transform-origin: center;
+}
+
+#colored_dots path {
+    opacity: 0;
+    animation: dropIn 4s ease forwards;
+    animation-delay: calc(var(--order) * 250ms);
+}
+
+#logo_app {
+    width: 400px;
+}
+
+#circle_green {
+    --order: 5;
+}
+#circle_yellow {
+    --order: 2;
+}
+#circle_blue {
+    --order: 4;
+}
+#circle_orange {
+    --order: 6;
+}
+#circle_purple {
+    --order: 3;
+}
+#circle_pink {
+    --order: 1;
+}
