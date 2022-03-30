@@ -1,0 +1,38 @@
+:root {
+    --red-color: #fb0e0e;
+    --green-color: #36D287;
+}
+
+#redGroup {
+    fill: var(--red-color);
+}
+#greenGroup {
+    fill: var(--green-color);
+}
+
+#Polygon_green,
+#Polygon_red1,
+#Polygon_red2 {
+    transition: all 1s ease;
+}
+
+#Polygon_red1 {
+    transform: translateX(-100%);
+}
+
+svg:hover #Polygon_green {
+    transform: translateX(23%);
+}
+
+svg:hover #Polygon_red2 {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+svg:hover #Polygon_red1 {
+    transform: translateX(10%);
+}
+
+#triangle_animation {
+    width: 300px;
+}

@@ -1,0 +1,13 @@
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#colored_dots {
+    animation: spin 7s infinite linear;
+    transform-origin: center;
+}
+#logo_app {
+    width: 512px;
+}
