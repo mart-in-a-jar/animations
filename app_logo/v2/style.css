@@ -6,16 +6,12 @@
     }
 }
 
-@keyframes dropIn {
-    20% {
+@keyframes fadeIn {
+    0% {
         opacity: 0;
-        /* transform: translateY(-60%); */
-        transform: translateX(100%);
     }
     30%, 100% {
         opacity: 1;
-        /* transform: translateY(0); */
-        transform: translateX(0);
     }
 }
 
@@ -29,8 +25,8 @@
 
 #colored_dots path {
     opacity: 0;
-    animation: dropIn 4s ease forwards;
-    animation-delay: calc(var(--order) * 250ms);
+    animation: fadeIn 1s forwards;
+    animation-delay: calc(var(--order) * 450ms);
 }
 
 #logo_app {
@@ -38,20 +34,20 @@
 }
 
 #circle_green {
-    --order: 5;
-}
-#circle_yellow {
-    --order: 2;
-}
-#circle_blue {
     --order: 4;
 }
-#circle_orange {
-    --order: 6;
+#circle_yellow {
+    --order: 1;
 }
-#circle_purple {
+#circle_blue {
     --order: 3;
 }
+#circle_orange {
+    --order: 5;
+}
+#circle_purple {
+    --order: 2;
+}
 #circle_pink {
-    --order: 1;
+    --order: 0;
 }
